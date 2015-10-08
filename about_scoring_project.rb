@@ -88,12 +88,4 @@ class AboutScoringProject < Neo::Koan
     assert_equal 1200, score([1,1,1,1,1])
     assert_equal 1150, score([1,1,1,5,1])
   end
-
-  def test_score_of_mixed_is_sum2
-    assert_equal 250, score([2,5,2,2,3])
-    assert_equal 550, score([5,5,5,5,1,1,1,2])
-    assert_equal 1100, score([1,1,1,1])
-    assert_equal 1200, score([1,1,1,1,1])
-    assert_equal 1150, score([1,1,1,5,1])
-  end
 end
